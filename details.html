@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Playhard</title>
+		<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
+		<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+		<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="scripts/details.js" type="module"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="/"><h1 class="logo">Playhard</h1></a>
+			<ul>
+				<a href="/"><li>Home</li></a>
+				<a href="/favourite.html"><li>Favourite</li></a>
+			</ul>
+		</nav>
+
+		<div class="details-loader-div">
+			<div class="details-loader"></div>
+			Fetching game details
+		</div>
+		<section id="game-content">
+			<div id="game-header">
+				<div>
+					<h1 id="game-title"></h1>
+					<div id="game-genres"></div>
+				</div>
+				<div id="game-rating">
+					<h5></h5>
+					<h4></h4>
+				</div>
+			</div>
+
+			<div id="image-gallery" class="glide">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide" id="slide0"></li>
+						<li class="glide__slide" id="slide1"></li>
+						<li class="glide__slide" id="slide2"></li>
+						<li class="glide__slide" id="slide3"></li>
+						<li class="glide__slide" id="slide4"></li>
+						<li class="glide__slide" id="slide5"></li>
+					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+					<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+					<button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+				</div>
+			</div>
+			<div id="game-hero">
+				<p id="game-description"></p>
+				<div id="game-metadata">
+					<div>
+						<h2>Publishers</h2>
+						<p id="game-publishers"></p>
+					</div>
+					<div>
+						<h2>Available On</h2>
+						<p id="game-buy-sites"></p>
+					</div>
+					<div>
+						<h2>Developers</h2>
+						<p id="game-developers"></p>
+					</div>
+
+					<div>
+						<h2>Platforms</h2>
+						<p id="game-platforms"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<h5 style="margin-bottom: -10px">Built with <span style="color: red; margin-left: 4px">&#x2764;</span></h5>
+			<h5>Powered by JS, RAWG Api</h5>
+		</footer>
+	</body>
+</html>

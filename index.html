@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Playhard</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="scripts/home.js" type="module"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="/"><h1 class="logo">Playhard</h1></a>
+			<ul>
+				<a href="/"><li>Home</li></a>
+				<a href="/favourite.html"><li>Favourite</li></a>
+			</ul>
+		</nav>
+
+		<div class="banner">
+			<video src="/assets/biomutant.mp4" loop autoplay></video>
+			<div class="video-overlay"></div>
+			<div class="banner-content">
+				<h1>Browse your favourite games. Anytime. Anywhere.</h1>
+				<form>
+					<input type="text" id="search-input" name="search" placeholder="Cyberpunk etc" />
+					<button id="search-btn">Search</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="loader-div">
+			<div class="loader"></div>
+		</div>
+
+		<section id="main-content"></section>
+
+		<footer>
+			<h5 style="margin-bottom: -10px">Built with <span style="color: red; margin-left: 4px">&#x2764;</span></h5>
+			<h5>Powered by JS, RAWG Api</h5>
+		</footer>
+	</body>
+</html>
